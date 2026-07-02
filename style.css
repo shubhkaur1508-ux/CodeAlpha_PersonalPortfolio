@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#5084f5;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:rgb(141, 228, 246);
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+/* Home */
+#home img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #202e4d;
+}
+
+#home h1{
+    margin-top:20px;
+    font-size:40px;
+}
+
+#home p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+/* Button */
+button{
+    background:#84a0dd;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3d4d79;
+    transform:scale(1.05);
+}
+
+/* About */
+#about p{
+    margin-top:20px;
+    line-height:1.8;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Skills */
+.skill-box{
+    display:inline-block;
+    background:white;
+    padding:20px;
+    margin:15px;
+    width:150px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    font-weight:bold;
+}
+
+.skill-box:hover{
+    transform:translateY(-8px);
+    background:#375189;
+    color:white;
+}
+
+/* Projects */
+.project{
+    background:white;
+    padding:25px;
+    margin:20px auto;
+    max-width:600px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+}
+
+/* Contact */
+#contact p{
+    margin:12px;
+    font-size:18px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+#home h1{
+    font-size:30px;
+}
+
+}
+
+/* Fade Animation */
+
+section{
+    opacity:1;
+    transform:translateY(0);
+    transition:1s;
+}
+
+.resume-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#4f82f1;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    background:#6a90eb;
+    transform:scale(1.05);
+}
+/* Active Navigation Link */
+
+nav ul li a.active{
+    color:rgb(19, 232, 232);
+    font-weight:bold;
+    border-bottom:3px solid rgb(13, 145, 162);
+    padding-bottom:5px;
+}
